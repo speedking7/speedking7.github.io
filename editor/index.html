@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="瀛同学">
+    <meta name="site-url" content="https://speedking7.github.io">
+    <title>文章编辑器</title>
+    <link rel="stylesheet" href="/css/editor.css">
+</head>
+<body>
+    <div class="editor-container">
+        <div class="editor-header">
+            <input type="text" id="post-title" placeholder="请输入文章标题..." class="title-input">
+            <div class="meta-inputs">
+                <input type="text" id="post-categories" placeholder="分类，用逗号分隔..." class="meta-input">
+                <input type="text" id="post-tags" placeholder="标签，用逗号分隔..." class="meta-input">
+            </div>
+        </div>
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <button id="heading1" title="一级标题"><span class="icon">H1</span></button>
+                <button id="heading2" title="二级标题"><span class="icon">H2</span></button>
+                <button id="heading3" title="三级标题"><span class="icon">H3</span></button>
+            </div>
+            <div class="toolbar-group">
+                <button id="bold" title="加粗"><span class="icon">B</span></button>
+                <button id="italic" title="斜体"><span class="icon">I</span></button>
+                <button id="strikethrough" title="删除线"><span class="icon">S</span></button>
+            </div>
+            <div class="toolbar-group">
+                <button id="quote" title="引用"><span class="icon">❝</span></button>
+                <button id="code" title="代码"><span class="icon">{'}'}</span></button>
+                <button id="link" title="链接"><span class="icon">🔗</span></button>
+                <button id="image" title="图片"><span class="icon">📷</span></button>
+            </div>
+            <div class="toolbar-group">
+                <button id="list-ul" title="无序列表"><span class="icon">•</span></button>
+                <button id="list-ol" title="有序列表"><span class="icon">1.</span></button>
+                <button id="table" title="表格"><span class="icon">☷</span></button>
+            </div>
+        </div>
+        <div class="editor-main">
+            <div class="editor-wrapper">
+                <textarea id="editor" placeholder="在此输入文章内容..."></textarea>
+            </div>
+            <div class="preview-wrapper">
+                <div id="preview"></div>
+            </div>
+        </div>
+        <div class="editor-footer">
+            <button id="save-draft" class="btn">保存草稿</button>
+            <button id="publish" class="btn btn-primary">发布文章</button>
+        </div>
+    </div>
+    <script src="/js/editor.js"></script>
+</body>
+</html> 

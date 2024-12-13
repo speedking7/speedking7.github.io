@@ -1,0 +1,183 @@
+.editor-container {
+    max-width: 1400px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.title-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 24px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+.title-input:focus {
+    outline: none;
+    border-bottom-color: #1890ff;
+}
+
+.meta-inputs {
+    display: flex;
+    gap: 15px;
+}
+
+.meta-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.toolbar {
+    padding: 10px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    gap: 15px;
+}
+
+.toolbar-group {
+    display: flex;
+    gap: 5px;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+.toolbar-group:last-child {
+    border-right: none;
+}
+
+.toolbar button {
+    padding: 6px 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.toolbar button:hover {
+    background: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.toolbar .icon {
+    font-size: 14px;
+    color: #495057;
+}
+
+.editor-main {
+    display: flex;
+    height: calc(100vh - 300px);
+    min-height: 400px;
+}
+
+.editor-wrapper,
+.preview-wrapper {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.editor-wrapper {
+    border-right: 1px solid #eee;
+}
+
+#editor {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: none;
+    resize: none;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+#editor:focus {
+    outline: none;
+}
+
+#preview {
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+.editor-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #f8f9fa;
+}
+
+.btn-primary {
+    background: #1890ff;
+    border-color: #1890ff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #40a9ff;
+    border-color: #40a9ff;
+}
+
+/* Markdown 预览样式 */
+#preview h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid #eee;
+}
+
+#preview h2 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+}
+
+#preview h3 {
+    font-size: 1.25em;
+    margin: 1em 0 0.5em;
+}
+
+#preview p {
+    margin-bottom: 1em;
+}
+
+#preview code {
+    padding: 0.2em 0.4em;
+    background: #f6f8fa;
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+#preview pre code {
+    display: block;
+    padding: 1em;
+    padding: 16px;
+    overflow-x: auto;
+} 
